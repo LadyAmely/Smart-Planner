@@ -1,0 +1,108 @@
+.dashboard {
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "nav main"
+        "footer footer";
+    grid-template-rows: 70px 1fr 50px;
+    grid-template-columns: 200px 1fr;
+    height: 100%;
+    font-family: Open Sans, sans-serif;
+    background: linear-gradient(45deg, #15151e, #322d91, #3c3a68);
+    
+}
+
+.dashboard-header {
+    grid-area: header;
+    background-color:  #1010251e;
+    color: rgb(212, 211, 220);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 100;
+}
+
+
+.dashboard-nav {
+    grid-area: nav;
+    background-color: #15151e18;
+    padding: 20px;
+}
+
+.dashboard-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.dashboard-nav li {
+    margin-bottom: 10px;
+}
+
+.dashboard-nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.dashboard-nav a:hover {
+    color: #6d4caf;
+}
+
+.dashboard-main {
+    grid-area: main;
+    padding: 20px;
+}
+
+.dashboard-content {
+    background: linear-gradient(45deg, #15151e22, #27245e07);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-footer {
+    grid-area: footer;
+    background-color:  #15151e3a;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+
+.fc {
+    font-family: Open Sans, sans-serif;
+}
+
+.fc .fc-toolbar-title {
+    color: #ecf0f1;
+}
+
+.fc .fc-daygrid-day {
+    background-color: #1e2a3800;
+    color: #ecf0f1;
+}
+
+.fc .fc-day-header {
+    background-color: #f4f8fb;
+    color: #ecf0f1;
+}
+
+.fc .fc-col-header-cell {
+    color: #fdfafa8b; 
+}
+
+.fc .fc-button {
+    background-color: #34495e4e;
+    color: #ecf0f1;
+}
+.fc .fc-button:hover {
+    background-color: #322d914d;
+}
+
