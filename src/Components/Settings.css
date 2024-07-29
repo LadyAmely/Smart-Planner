@@ -1,0 +1,71 @@
+.settings {
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "nav main"
+        "footer footer";
+    grid-template-rows: 70px 1fr 50px;
+    grid-template-columns: 200px 1fr;
+    height: 100vh;
+    font-family: Open Sans, sans-serif;
+    background: linear-gradient(45deg, #15151e, #322d91, #3c3a68);
+  
+    
+}
+
+.settings-header {
+    grid-area: header;
+    background-color:   #1010251e;;
+    color: rgb(212, 211, 220);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 100;
+}
+
+
+.settings-nav {
+    grid-area: nav;
+    background-color: #15151e18;
+    padding: 20px;
+}
+
+.settings-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.settings-nav li {
+    margin-bottom: 10px;
+}
+
+.settings-nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.settings-nav a:hover {
+    color: #6d4caf;
+}
+
+.settings-main {
+    grid-area: main;
+    padding: 20px;
+}
+
+.settings-footer {
+    grid-area: footer;
+    background-color:  #15151e3a;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.settings-content {
+    background: linear-gradient(45deg, #15151e22, #27245e07);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 500px rgba(0, 0, 0, 0.1);
+}

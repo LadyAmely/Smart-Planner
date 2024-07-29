@@ -1,0 +1,9 @@
+.chart {
+    background: linear-gradient(45deg, #9f9fef7e, #27245e07);
+    border-radius: 8px;
+    padding: 20px;
+    height:130%;
+    box-shadow: 0 2px 300px rgba(0, 0, 0, 0.1);
+   
+}
+

@@ -8,7 +8,9 @@
     grid-template-columns: 200px 1fr;
     height: 100%;
     font-family: Open Sans, sans-serif;
-    background: linear-gradient(45deg, #15151e, #322d91, #3c3a68);
+    background: radial-gradient(circle, #064dff,#0549f3,#101029, #191716);
+  
+  
     
 }
 
@@ -54,7 +56,7 @@
 }
 
 .dashboard-content {
-    background: linear-gradient(45deg, #15151e22, #27245e07);
+    background: linear-gradient(45deg, #09093682, #27245e62);
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -78,6 +80,17 @@
 
 .fc {
     font-family: Open Sans, sans-serif;
+    border: none;
+  
+}
+
+.fc-view {
+    outline-color: #0549f3;
+    border-radius: 20px;
+}
+
+.fc-event {
+    border: none;
 }
 
 .fc .fc-toolbar-title {
@@ -85,6 +98,7 @@
 }
 
 .fc .fc-daygrid-day {
+    border: 1px solid rgba(200, 200, 200, 0.3);
     background-color: #1e2a3800;
     color: #ecf0f1;
 }
@@ -95,6 +109,7 @@
 }
 
 .fc .fc-col-header-cell {
+    border: 1px solid rgba(200, 200, 200, 0.162);
     color: #fdfafa8b; 
 }
 

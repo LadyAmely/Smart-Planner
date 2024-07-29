@@ -1,17 +1,28 @@
 
 
 import Dashboard from './Components/Dashboard';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Calendar from './Components/Calendar';
 import Settings from './Components/Settings';
+import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
+
 
 function App() {
   return (
-    <div className="App">
-       <Dashboard />
-       
+
+    <Router>
+     <div className="App">
+    
+      <Routes>
+          <Route path="/" element={<Calendar/>} />
+          <Route path="/dashboard" element={<Calendar/>} />
+          <Route path="/calendar" element={<Dashboard/>} />
+          <Route path="/settings" element={<Settings/>} />
+        </Routes>
+
+
     </div>
 
+    </Router>
 
   );
 }

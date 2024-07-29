@@ -1,0 +1,25 @@
+
+
+
+
+.fc .fc-scroller::-webkit-scrollbar {
+    width: 7px; 
+  }
+  
+  .fc .fc-scroller::-webkit-scrollbar-track {
+    background: #1344be74;
+  }
+  
+  .fc .fc-scroller::-webkit-scrollbar-thumb {
+    background-color: radial-gradient(circle, #064dff,#0549f3,#101029, #191716);
+    border-radius: 5px; 
+    border: 1px solid #1c97d9; 
+  }
+  
+  .fc .fc-scroller::-webkit-scrollbar-thumb:hover {
+    background: #539df1a8; 
+  }
+  
+  
+
+  
