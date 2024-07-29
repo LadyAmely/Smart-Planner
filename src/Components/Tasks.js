@@ -1,17 +1,16 @@
 import React from 'react';
-import './Dashboard.css';
-import dayGridPlugin from '@fullcalendar/daygrid';
-import FullCalendar from '@fullcalendar/react';
+import './Tasks.css';
 import dayjs from "dayjs";
 
 const formattedDate = dayjs().format('DD-MM-YYYY');
 
-const Dashboard = () => {
-    return (
-        <div className="dashboard">
+const Tasks = () => {
 
+    return(
 
-            <header className="dashboard-header">
+        <div className="tasks">
+
+            <header className="tasks-header">
                 <h1>Smart Planner</h1>
 
                 <div class="search-container">
@@ -32,7 +31,7 @@ const Dashboard = () => {
 
             </header>
 
-            <nav className="dashboard-nav">
+            <nav className="tasks-nav">
                 <ul>
                     <li><a href="/dashboard" target="_blank" rel="noopener noreferrer">DASHBOARD</a></li>
                     <li><a href="/calendar" target="_blank" rel="noopener noreferrer">CALENDAR</a></li>
@@ -43,22 +42,23 @@ const Dashboard = () => {
                 </ul>
             </nav>
 
-            <main className="dashboard-main">
+            <main className="tasks-main">
 
-                <section className="dashboard-content">
-                    <FullCalendar
-                        plugins={[dayGridPlugin]}
-                        initialView="dayGridMonth"
-                    />
-                </section>
+
             </main>
-            <footer className="dashboard-footer">
 
+
+            <footer className="tasks-footer">
                 <p>2024 &copy; All Right Researved by Lady Amely</p>
+
             </footer>
 
+
         </div>
+
+
     );
 }
 
-export default Dashboard;
+export default Tasks;
+

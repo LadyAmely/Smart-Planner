@@ -3,13 +3,9 @@ import './Calendar.css';
 import './planner.css';
 import './chart.css';
 import './search.css';
-import dayGridPlugin from '@fullcalendar/daygrid';
-import FullCalendar from '@fullcalendar/react';
 import { Box, Typography, Paper } from '@mui/material';
 import { styled } from '@mui/system';
 import './ScrollbarStyles.css';
-import MyDatePicker from './MyDatePicker';
-import timeGridPlugin from '@fullcalendar/timegrid';
 import './styles.css';
 import dayjs from 'dayjs';
 
@@ -249,8 +245,8 @@ return (
                     <li><a href="/dashboard" target="_blank" rel="noopener noreferrer">DASHBOARD</a></li>
                     <li><a href="/calendar" target="_blank" rel="noopener noreferrer">CALENDAR</a></li>
                     <li><a href="/deadlines" target="_blank" rel="noopener noreferrer">DEADLINES</a></li>
-                    <li><a href="mettings" target="_blank" rel="noopener noreferrer">METTINGS</a></li>
-                    <li><a href="tasks" target="_blank" rel="noopener noreferrer">TASKS</a></li>
+                    <li><a href="/meetings" target="_blank" rel="noopener noreferrer">MEETINGS</a></li>
+                    <li><a href="/tasks" target="_blank" rel="noopener noreferrer">TASKS</a></li>
                     <li><a href="/settings" target="_blank" rel="noopener noreferrer">SETTINGS</a></li>
                 </ul>
             </nav>

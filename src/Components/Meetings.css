@@ -1,4 +1,4 @@
-.settings {
+.meetings {
     display: grid;
     grid-template-areas:
         "header header"
@@ -12,7 +12,7 @@
 
 }
 
-.settings-header {
+.meetings-header {
     grid-area: header;
     background-color:#0549f32e;
     color: rgba(126, 161, 243, 0.682);
@@ -67,46 +67,46 @@
     padding: 0px 40px;
 }
 
-.settings-nav {
+.meetings-nav {
     grid-area: nav;
     background-color:#0549f319;
     padding: 50px;
 }
 
-.settings-nav ul {
+.meetings-nav ul {
     list-style-type: none;
     padding: 0;
 }
 
-.settings-nav li {
+.meetings-nav li {
     margin-bottom: 50px;
 }
 
-.settings-nav a {
+.meetings-nav a {
     text-decoration: none;
     color: #3c80cd6a;
     font-size: 20px;
     font-family: 'IBM Plex Sans', 'Times New Roman', Times, serif;
 }
 
-.settings-nav a:hover {
+.meetings-nav a:hover {
     color: #1c71e1;
 }
 
-.settings-main {
+.meetings-main {
     grid-area: main;
     padding: 20px;
 
 }
 
-.settings-content {
+.meetings-content {
     background: linear-gradient(45deg, #09093682, #27245e62);
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.settings-footer {
+.meetings-footer {
     grid-area: footer;
     background-color:  #15151e3a;
     color: rgba(255, 255, 255, 0.437);
