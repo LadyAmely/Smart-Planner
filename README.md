@@ -4,4 +4,4 @@ Web application designed for efficient business planing. The appliaction aims to
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
