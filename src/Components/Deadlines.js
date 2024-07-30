@@ -1,6 +1,7 @@
 import React from 'react';
 import './Deadlines.css';
 import dayjs from "dayjs";
+import './ScrollbarStyles.css';
 
 const formattedDate = dayjs().format('DD-MM-YYYY');
 
@@ -44,9 +45,61 @@ const Deadlines = () => {
 
             <main className="deadlines-main">
 
+                <div class="content-header">
+                    <h2>Upcoming Deadlines</h2>
+                    <button className="add-deadline-button">Add Deadline</button>
+                </div>
+
+                <div className="deadlines-content">
+
+                    <ul class="deadlines-list">
+
+                        <li className="deadline-item">
+                            <div class="deadline-date">Aug 1, 2024</div>
+                            <div class="deadline-title">Project Alpha - Final Report</div>
+                            <div class="deadline-priority high">High Priority</div>
+                            <div class="deadline-description">Complete the final report for Project Alpha.</div>
+                        </li>
+                        <li className="deadline-item">
+                            <div class="deadline-date">Aug 5, 2024</div>
+                            <div class="deadline-title">Client Meeting - Q3 Review</div>
+                            <div class="deadline-priority medium">Medium Priority</div>
+                            <div class="deadline-description">Prepare presentation for Q3 review meeting with client.
+                            </div>
+                        </li>
+                        <li className="deadline-item">
+                            <div class="deadline-date">Aug 7, 2024</div>
+                            <div class="deadline-title">Project Beta - Mid-Term Evaluation</div>
+                            <div class="deadline-priority low">Low Priority</div>
+                            <div class="deadline-description">Conduct a mid-term evaluation of Project Beta to assess progress, identify any issues, and adjust the project plan as necessary.
+
+                                .
+                            </div>
+                        </li>
+                        <li className="deadline-item">
+                            <div class="deadline-date">Aug 8, 2024</div>
+                            <div class="deadline-title">Team Discussion - Email Review</div>
+                            <div class="deadline-priority low">Low Priority</div>
+                            <div class="deadline-description">Review and optimize email communication strategies to improve efficiency and clarity within the team and with external stakeholders.
+
+
+                            </div>
+                        </li>
+                        <li className="deadline-item">
+                            <div class="deadline-date">Aug 10, 2024</div>
+                            <div class="deadline-title">Team Discussion - Project Planning</div>
+                            <div class="deadline-priority high">High Priority</div>
+                            <div class="deadline-description">Plan and discuss the key aspects of the upcoming project to ensure all team members are aligned and prepared for execution..
+                            </div>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+
 
             </main>
-
 
             <footer className="deadlines-footer">
 

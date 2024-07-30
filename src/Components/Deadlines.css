@@ -104,7 +104,111 @@
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 70vh;
 }
+
+.deadlines-content::-webkit-scrollbar-track {
+    background: #3160c524;
+}
+
+.deadlines-content::-webkit-scrollbar-thumb {
+    background-color: radial-gradient(circle, #064dff,#0549f3,#101029, #191716);
+    border-radius: 5px;
+    border: 1px solid #1c97d9;
+}
+
+.deadlines-content::-webkit-scrollbar {
+    width: 5px;
+}
+
+.deadlines-content::-webkit-scrollbar-thumb:hover {
+    background: #309ee780;
+}
+
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.content-header h2{
+
+    color: #fff;
+}
+
+.add-deadline-button {
+    background-color: rgba(28, 113, 225, 0.27);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-deadline-button:hover {
+    background-color: #1456a3;
+}
+
+
+.deadlines-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.deadlines-list .deadline-item {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: rgba(20, 41, 93, 0.1);
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.deadlines-list .deadline-item:hover {
+    background-color: rgba(20, 41, 93, 0.3);
+}
+
+.deadline-date {
+    font-size: 16px;
+    color: #a0b7f0;
+    margin-bottom: 5px;
+}
+
+.deadline-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #e6e9f0;
+    margin-bottom: 5px;
+}
+
+.deadline-priority {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.deadline-priority.high {
+    color: #ff6161;
+}
+
+.deadline-priority.medium {
+    color: #ffa500;
+}
+
+.deadline-priority.low {
+    color: #00ff00;
+}
+
+.deadline-description {
+    font-size: 14px;
+    color: #c0c6dc;
+}
+
 
 .deadlines-footer {
     grid-area: footer;
