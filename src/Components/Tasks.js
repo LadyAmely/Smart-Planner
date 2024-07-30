@@ -54,30 +54,30 @@ const Tasks = () => {
                             <div className="list-tasks">
                                 <div className="tasks-box">
                                     <div className="task-title">
-                                        <p>Prepare Project Alpha Final Report</p>
+                                        <p>Client Meeting</p>
                                     </div>
                                     <div class="tasks-deadline">Due: August 1, 2024</div>
                                 </div>
 
                                 <div className="tasks-box">
                                     <div className="task-title">
-                                        <p>Prepare Project Alpha Final Report</p>
+                                        <p>Email Review</p>
                                     </div>
-                                    <div class="tasks-deadline">Due: August 1, 2024</div>
+                                    <div class="tasks-deadline">Due: August 3, 2024</div>
                                 </div>
 
                                 <div className="tasks-box">
                                     <div className="task-title">
-                                        <p>Prepare Project Alpha Final Report</p>
+                                        <p>Project Alpha Final Report</p>
                                     </div>
-                                    <div class="tasks-deadline">Due: August 1, 2024</div>
+                                    <div class="tasks-deadline">Due: August 4, 2024</div>
                                 </div>
 
                                 <div className="tasks-box">
                                     <div className="task-title">
-                                        <p>Prepare Project Alpha Final Report</p>
+                                        <p>Team Discussion</p>
                                     </div>
-                                    <div class="tasks-deadline">Due: August 1, 2024</div>
+                                    <div class="tasks-deadline">Due: August 5, 2024</div>
                                 </div>
                             </div>
                         </div>
