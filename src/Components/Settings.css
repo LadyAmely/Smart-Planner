@@ -123,3 +123,107 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap');
 
+.notifications-settings {
+    margin-top: 40px;
+}
+
+.notifications-settings h3 {
+    color: #7ea1f3;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.notifications-settings .notification-option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #1c71e1;
+}
+
+.notifications-settings .notification-option label {
+    color: #a0b7f0;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+}
+
+.notifications-settings .notification-option input[type="checkbox"] {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+/* Themes Section */
+.theme-settings {
+    margin-top: 40px;
+}
+
+.theme-settings h3 {
+    color: #7ea1f3;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.theme-settings .theme-option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #1c71e1;
+}
+
+.theme-settings .theme-option label {
+    color: #a0b7f0;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+}
+
+.theme-settings .theme-option select {
+    padding: 10px;
+    border: 1px solid #4583d4;
+    border-radius: 10px;
+    background-color: #14295d24;
+    color: #f6f7f9;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+.privacy-settings {
+    margin-top: 40px;
+}
+
+.privacy-settings h3 {
+    color: #7ea1f3;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.privacy-settings .privacy-option {
+    padding: 10px 0;
+    border-bottom: 1px solid #1c71e1;
+}
+
+.privacy-settings .privacy-option label {
+    color: #a0b7f0;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+}
+
+.privacy-settings .privacy-option button {
+    background-color: #1c71e1;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 30vh;
+    transform: translate(15%, 0%);
+}
+
+.privacy-settings .privacy-option button:hover {
+    background-color: #0549f3;
+}
+

@@ -45,6 +45,42 @@ const Settings = () => {
 
             <main className="settings-main">
 
+                <section id="notifications-settings" class="settings-content notifications-settings">
+                    <h3>Notification Settings</h3>
+                    <div class="notification-option">
+                        <label htmlFor="email-notifications">Email Notifications</label>
+                        <input type="checkbox" id="email-notifications" checked/>
+                    </div>
+                    <div class="notification-option">
+                        <label htmlFor="sms-notifications">SMS Notifications</label>
+                        <input type="checkbox" id="sms-notifications"/>
+                    </div>
+                </section>
+
+                <section id="theme-settings" class="settings-content theme-settings">
+                    <h3>Theme Settings</h3>
+                    <div class="theme-option">
+                        <label htmlFor="theme-select">Select Theme</label>
+                        <select id="theme-select">
+                            <option value="light">Light</option>
+                            <option value="dark" selected>Dark</option>
+                            <option value="blue">Blue</option>
+                        </select>
+                    </div>
+                </section>
+
+                <section id="privacy-settings" class="settings-content privacy-settings">
+                    <h3>Privacy Settings</h3>
+                    <div class="privacy-option">
+                        <label>Enable Two-Factor Authentication</label>
+                        <button>Enable</button>
+                    </div>
+                    <div class="privacy-option">
+                        <label>Data Privacy</label>
+                        <button>Manage</button>
+                    </div>
+                </section>
+
 
             </main>
 
