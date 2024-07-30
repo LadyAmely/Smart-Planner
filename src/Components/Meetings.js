@@ -44,6 +44,39 @@ const Meetings = () => {
 
             <main className="meetings-main">
 
+                <div className="meetings-content">
+                    <h2>Meetings details</h2>
+                    <div class="meeting-details">
+                        <p><strong>Title:</strong>Team Meeting</p>
+                        <p><strong>Date:</strong> 2024-07-30</p>
+                        <p><strong>Hour:</strong> 14:00</p>
+                        <p><strong>Localization:</strong>Conference Room A</p>
+                        <p><strong>Participants:</strong> John Smith, Emily Johnson</p>
+                    </div>
+                    <div class="agenda">
+                        <h3>Agenda</h3>
+                        <ul>
+                            <li>Discussion of the project results</li>
+                            <li>Planning the next steps</li>
+                        </ul>
+                    </div>
+                    <div class="attachments">
+                        <h3>Attachments</h3>
+                        <ul>
+                            <li><a href="#" download>Project plan.pdf</a></li>
+                            <li><a href="#" download>Results Report.docx</a></li>
+                        </ul>
+                    </div>
+                    <div class="notes">
+                        <h3>Notes and Summary</h3>
+                        <p>The meeting will focus on the project results and planning for further activities. We will also discuss possible challenges and solution strategies.</p>
+                    </div>
+                    <div class="actions">
+                        <button className="btn-edit">Edit Meeting</button>
+                        <button className="btn-delete">Delete Meeting</button>
+                    </div>
+                </div>
+
 
             </main>
 

@@ -106,6 +106,77 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.meetings-content h2, .meetings-content h3 {
+    color: rgba(126, 161, 243, 0.682);
+}
+
+.meeting-details, .agenda, .attachments, .notes {
+    margin-bottom: 20px;
+}
+
+.meeting-details p {
+    margin: 5px 0;
+    color: rgba(255, 255, 255, 0.76);
+}
+
+.agenda ul, .attachments ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.agenda li, .attachments li {
+    margin: 5px 0;
+    color: rgba(255, 255, 255, 0.76);
+}
+
+.agenda li::before {
+    content: "• ";
+    color: #007bff;
+}
+
+.attachments a {
+    color: #3c80cd;
+    text-decoration: none;
+}
+
+.attachments a:hover {
+    text-decoration: underline;
+}
+
+.notes p {
+    margin: 10px 0;
+    color: rgba(255, 255, 255, 0.76);
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn-edit, .btn-delete {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-edit:hover, .btn-delete:hover {
+    background-color: #0056b3;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+}
+
+.btn-delete:hover {
+    background-color: #c82333;
+}
+
 .meetings-footer {
     grid-area: footer;
     background-color:  #15151e3a;
