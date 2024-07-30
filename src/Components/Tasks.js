@@ -2,6 +2,8 @@ import React from 'react';
 import './Tasks.css';
 import dayjs from "dayjs";
 
+
+
 const formattedDate = dayjs().format('DD-MM-YYYY');
 
 const Tasks = () => {
@@ -43,6 +45,107 @@ const Tasks = () => {
             </nav>
 
             <main className="tasks-main">
+
+                <ul class="tasks-list">
+
+                    <li className="tasks-item">
+                        <div class="task-list tasks-content">
+                            <h2 class="section-title">Task List</h2>
+                            <div className="list-tasks">
+                                <div className="tasks-box">
+                                    <div className="task-title">
+                                        <p>Prepare Project Alpha Final Report</p>
+                                    </div>
+                                    <div class="tasks-deadline">Due: August 1, 2024</div>
+                                </div>
+
+                                <div className="tasks-box">
+                                    <div className="task-title">
+                                        <p>Prepare Project Alpha Final Report</p>
+                                    </div>
+                                    <div class="tasks-deadline">Due: August 1, 2024</div>
+                                </div>
+
+                                <div className="tasks-box">
+                                    <div className="task-title">
+                                        <p>Prepare Project Alpha Final Report</p>
+                                    </div>
+                                    <div class="tasks-deadline">Due: August 1, 2024</div>
+                                </div>
+
+                                <div className="tasks-box">
+                                    <div className="task-title">
+                                        <p>Prepare Project Alpha Final Report</p>
+                                    </div>
+                                    <div class="tasks-deadline">Due: August 1, 2024</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+
+                    <li className="tasks-item">
+                        <div class="task-details tasks-content">
+                            <h2 class="section-title">Task Details</h2>
+                            <div class="task-info">
+                                <h3>Selected Task: Prepare Project Alpha Final Report</h3>
+                                <p>Description: Complete and finalize the report for Project Alpha to ensure all
+                                    deliverables
+                                    are met and submitted on time.</p>
+                                <p>Assigned To: John Doe</p>
+                                <p>Deadline: August 1, 2024</p>
+                                <textarea placeholder="Add notes here..." className="task-notes"></textarea>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li className="tasks-item">
+                        <div class="task-management tasks-content">
+                            <h2 class="section-title">Create New Task</h2>
+                            <form className="task-form">
+                                <label htmlFor="task-title">Task Title:</label>
+                                <input type="text" id="task-title" name="task-title" placeholder="Enter task title"
+                                       required/>
+
+                                <label htmlFor="task-deadline">Deadline:</label>
+                                <input type="date" id="task-deadline" name="task-deadline" required/>
+
+                                <label htmlFor="task-assignee">Assign To:</label>
+                                <input type="text" id="task-assignee" name="task-assignee"
+                                       placeholder="Enter assignee name"
+                                       required/>
+
+                                <label htmlFor="task-description">Description:</label>
+                                <textarea id="task-description" name="task-description"
+                                          placeholder="Enter task description"></textarea>
+
+                                <button type="submit" className="btn-submit">Create Task</button>
+                            </form>
+                        </div>
+
+                    </li>
+
+                    <li className="tasks-item">
+
+                        <div class="task-filters tasks-content">
+                            <h2 class="section-title">Filter Tasks</h2>
+                            <div class="filters">
+                                <label htmlFor="filter-assignee">Filter by Assignee:</label>
+                                <input type="text" id="filter-assignee" name="filter-assignee"
+                                       placeholder="Enter assignee name"/>
+
+                                <label htmlFor="filter-date">Filter by Date:</label>
+                                <input type="date" id="filter-date" name="filter-date"/>
+
+                                <button type="button" className="btn-apply-filters">Apply Filters</button>
+                            </div>
+                        </div>
+                    </li>
+
+
+                </ul>
+
+
 
 
             </main>
