@@ -1,0 +1,45 @@
+.footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #34495e;
+    margin-top: 20px;
+}
+
+.footer a {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #0a6dcd;
+}
+
+.footer p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.footer .social-icons {
+    margin-top: 10px;
+}
+
+.footer .social-icons a {
+    margin: 0 5px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #34495e;
+    border-radius: 50%;
+    line-height: 30px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.footer .social-icons a:hover {
+    background-color: #75a7d8;
+}

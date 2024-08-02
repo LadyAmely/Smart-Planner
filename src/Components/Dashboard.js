@@ -1,61 +1,91 @@
 import React from 'react';
+import { Calendar, momentLocalizer } from 'react-big-calendar';
+import moment from 'moment';
+import 'react-big-calendar/lib/css/react-big-calendar.css';
 import './Dashboard.css';
-import dayGridPlugin from '@fullcalendar/daygrid';
-import FullCalendar from '@fullcalendar/react';
-import dayjs from "dayjs";
+import './sidebar.css';
+import './header.css';
+import './footer.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
-const formattedDate = dayjs().format('DD-MM-YYYY');
+const localizer = momentLocalizer(moment);
+
+const myEventsList = [
+
+];
 
 const Dashboard = () => {
     return (
         <div className="dashboard">
-
-
-            <header className="dashboard-header">
-                <h1>Smart Planner</h1>
-
-                <div class="search-container">
-                    <input type="text" className="search-input" placeholder="Search Projects.."/>
-                    <button className="search-button">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                             className="bi bi-search" viewBox="0 0 16 16">
-                            <path
-                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                        </svg>
-                    </button>
+            <div className="sidebar">
+                <h3>Planner Menu</h3>
+                <div className="section">
+                    <h2>Tasks & Projects</h2>
+                    <ul>
+                        <li><a href="/dashboard"><i className="fas fa-tachometer-alt"></i>Dashboard</a></li>
+                        <li><a href="/calendar"><i className="fas fa-calendar-alt"></i>Calendar</a></li>
+                        <li><a href="/deadlines"><i className="fas fa-calendar-check"></i>Deadlines</a></li>
+                        <li><a href="/meetings"><i className="fas fa-handshake"></i>Meetings</a></li>
+                        <li><a href="/tasks"><i className="fas fa-tasks"></i>Tasks</a></li>
+                        <li><a href="/settings"><i className="fas fa-cogs"></i>Settings</a></li>
+                    </ul>
                 </div>
-
-                <div className="today-text">
-                    <h1>Today: {formattedDate}</h1>
+                <div className="section">
+                    <h2>About the App</h2>
+                    <ul>
+                        <li><a href="/about_me"><i className="fas fa-user"></i>About me</a></li>
+                        <li><a href="/terms"><i className="fas fa-file-alt"></i>Terms of Use</a></li>
+                        <li><a href="/privacy_policy"><i className="fas fa-lock"></i>Privacy Policy</a></li>
+                    </ul>
                 </div>
-
-
-            </header>
-
-            <nav className="dashboard-nav">
-                <ul>
-                    <li><a href="/dashboard" target="_blank" rel="noopener noreferrer">DASHBOARD</a></li>
-                    <li><a href="/calendar" target="_blank" rel="noopener noreferrer">CALENDAR</a></li>
-                    <li><a href="/deadlines" target="_blank" rel="noopener noreferrer">DEADLINES</a></li>
-                    <li><a href="/meetings" target="_blank" rel="noopener noreferrer">MEETINGS</a></li>
-                    <li><a href="/tasks" target="_blank" rel="noopener noreferrer">TASKS</a></li>
-                    <li><a href="/settings" target="_blank" rel="noopener noreferrer">SETTINGS</a></li>
-                </ul>
-            </nav>
-
-            <main className="dashboard-main">
-
+                <div className="sidebar-footer">
+                    <p>Powered by Lady Amely</p>
+                    <p>Contact Me</p>
+                    <p>
+                        <a href="https://www.facebook.com/yourprofile" className="social-icons"><i
+                            className="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/yourprofile" className="social-icons"><i
+                            className="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/yourprofile" className="social-icons"><i
+                            className="fab fa-linkedin-in"></i></a>
+                    </p>
+                </div>
+            </div>
+            <div className="header">
+                <a href="#" className="logo">Smart Plan</a>
+                <div className="nav-links">
+                    <a href="/help_support">Help & Support</a>
+                    <a href="/contact">Contact</a>
+                </div>
+                <div className="actions">
+                    <i className="fas fa-bell action-btn" title="Notifications"></i>
+                    <i className="fas fa-search action-btn" title="Search"></i>
+                    <i className="fas fa-cog action-btn" title="Settings"></i>
+                    <i className="fas fa-user action-btn" title="Profile"></i>
+                </div>
+            </div>
+            <div className="content">
                 <section className="dashboard-content">
-                    <FullCalendar
-                        plugins={[dayGridPlugin]}
-                        initialView="dayGridMonth"
-                    />
+                    <div className="fullcalendar-wrapper">
+                        <Calendar
+                            localizer={localizer}
+                            events={myEventsList}
+                            startAccessor="start"
+                            endAccessor="end"
+                            style={{height: 550, width: '90%'}}
+                        />
+                    </div>
                 </section>
-            </main>
-            <footer className="dashboard-footer">
+            </div>
 
-                <p>2024 &copy; All Right Researved by Lady Amely</p>
-            </footer>
+            <div className="footer">
+                <p>&copy; 2024 Lady Amely. All rights reserved</p>
+                <div className="social-icons">
+                    <a href="#facebook" title="Facebook">F</a>
+                    <a href="#instagram" title="Instagram">I</a>
+                    <a href="#linkedin" title="LinkedIn">L</a>
+                </div>
+            </div>
 
         </div>
     );
