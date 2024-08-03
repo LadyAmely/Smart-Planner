@@ -10,7 +10,7 @@
     padding: 20px;
     margin-left: 250px;
     transition: margin-left 0.3s ease;
-    background-color: #f9f9f9;
+    background-color: #ffffff;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -29,13 +29,13 @@
 }
 
 .deadlines-content::-webkit-scrollbar-track {
-    background: #3160c524;
+    background: #e0e6f2;
 }
 
 .deadlines-content::-webkit-scrollbar-thumb {
-    background-color: radial-gradient(circle, #064dff,#0549f3,#101029, #191716);
+    background-color: #8a9ac9;
     border-radius: 5px;
-    border: 1px solid #1c97d9;
+    border: 1px solid #7b8db2;
 }
 
 .deadlines-content::-webkit-scrollbar {
@@ -43,7 +43,7 @@
 }
 
 .deadlines-content::-webkit-scrollbar-thumb:hover {
-    background: #309ee780;
+    background: #6e7d94;
 }
 
 .content-header {
@@ -53,15 +53,14 @@
     margin-bottom: 20px;
 }
 
-.content-header h2{
-    color: #7ea1f3;
+.content-header h2 {
+    color: #6c78b0;
     margin: 0;
-
 }
 
 .add-deadline-button {
-    background-color: rgba(28, 113, 225, 0.27);
-    color: #7ea1f3;
+    background-color: rgba(50, 80, 180, 0.3);
+    color: #6c78b0;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -71,9 +70,8 @@
 }
 
 .add-deadline-button:hover {
-    background-color: #1456a3;
+    background-color: #5a67a6;
 }
-
 
 .deadlines-list {
     list-style-type: none;
@@ -86,25 +84,25 @@
     flex-direction: column;
     padding: 15px;
     margin-bottom: 10px;
-    background-color: rgba(20, 41, 93, 0.1);
+    background-color: rgba(139, 158, 224, 0.1);
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 .deadlines-list .deadline-item:hover {
-    background-color: rgba(20, 41, 93, 0.3);
+    background-color: rgba(139, 158, 224, 0.3);
 }
 
 .deadline-date {
     font-size: 16px;
-    color: #a0b7f0;
+    color: #9fa3c4;
     margin-bottom: 5px;
 }
 
 .deadline-title {
     font-size: 18px;
     font-weight: 600;
-    color: #e6e9f0;
+    color: #3c4d80;
     margin-bottom: 5px;
 }
 
@@ -114,18 +112,18 @@
 }
 
 .deadline-priority.high {
-    color: #ff6161;
+    color: #e57373;
 }
 
 .deadline-priority.medium {
-    color: #ffa500;
+    color: #ffb74d;
 }
 
 .deadline-priority.low {
-    color: #00ff00;
+    color: #81c784;
 }
 
 .deadline-description {
     font-size: 14px;
-    color: #c0c6dc;
+    color: #9e9e9e;
 }

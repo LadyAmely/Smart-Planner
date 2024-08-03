@@ -53,7 +53,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin-left: 40px;
-    margin-top: 500px;
+    margin-top: 450px;
 
 
 }
@@ -74,6 +74,7 @@
     position: absolute;
     top: 80px;
     left: 80vh;
+    bottom: 20px;
     background-color: #ffffff;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

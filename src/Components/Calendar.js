@@ -49,8 +49,22 @@ ChartJS.register(
       {
         label: 'Hours Spent',
         data: [10, 8, 20, 5, 7],
-        backgroundColor: '#3563d9ce',
-        borderColor: '#3563d9',
+          backgroundColor: [
+              '#a390e475',
+              'rgba(137, 182, 232, 0.2)',
+              '#c3a3e685',
+              'rgba(157, 186, 223, 0.2)',
+              '#b2c1f551',
+              '#a1b3d94e'
+          ],
+          borderColor: [
+              '#a390e4',
+              'rgba(137, 182, 232, 1)',
+              '#c3a3e6',
+              'rgba(157, 186, 223, 1)',
+              '#b2c1f5a7',
+              '#a1b3d9'
+          ],
         borderWidth: 1,
       },
     ],
@@ -62,7 +76,7 @@ ChartJS.register(
       legend: {
         position: 'bottom',
         labels: {
-          color: '#3563d9',
+          color: '#4e4e8a',
         },
       },
       
@@ -70,7 +84,7 @@ ChartJS.register(
     scales: {
       x: {
         ticks: {
-          color: '#ecf0f1',
+          color: '#4e4e8a',
           font: {
             family: 'Quicksand',
           },
@@ -78,7 +92,7 @@ ChartJS.register(
       },
       y: {
         ticks: {
-          color: '#ecf0f1',
+          color: '#4e4e8a',
           font: {
             family: 'Quicksand',
           },
@@ -112,20 +126,20 @@ ChartJS.register(
         label: '%',
         data: [35, 19, 20, 10, 9, 7],
         backgroundColor: [
-          '#2c54b875',
-          'rgba(54, 162, 235, 0.2)',
-          '#3aa5de85',
-          'rgba(75, 192, 192, 0.2)',
-          '#55d0fd51',
-          '#205bf04e'
+            '#a390e475',
+            'rgba(137, 182, 232, 0.2)',
+            '#c3a3e685',
+            'rgba(157, 186, 223, 0.2)',
+            '#b2c1f551',
+            '#a1b3d94e'
         ],
         borderColor: [
-          '#2c54b8',
-          'rgba(54, 162, 235, 1)',
-          '#3aa5de',
-          'rgba(75, 192, 192, 1)',
-          '#55d0fda7',
-          '#3a70f9'
+            '#a390e4',
+            'rgba(137, 182, 232, 1)',
+            '#c3a3e6',
+            'rgba(157, 186, 223, 1)',
+            '#b2c1f5a7',
+            '#a1b3d9'
         ],
         borderWidth: 1
       }
@@ -139,13 +153,13 @@ ChartJS.register(
         position: 'right',
         align: 'center',
         labels: {
-          color: '#f6f7f9',
+          color: '#4e4e8a',
 
         }
       },
       title: {
         display: true,
-        color: '#ecf0f1',
+        color: '#4e4e8a',
         font: {
           family: 'Quicksand',
           size: 0,
@@ -172,9 +186,9 @@ const Calendar = () => {
             data: [65, 59, 80, 81, 56, 55, 40],
             fill: true,
             area: true,
-            backgroundColor: '#3563d9ce', 
-            borderColor: '#3563d9ce',
-            color: '#3563d9ce',
+            backgroundColor: '#a390e475',
+            borderColor: '#a390e4',
+            color: '#a390e4',
             tension: 0.1
           }
         ]
@@ -187,7 +201,7 @@ const Calendar = () => {
           legend: {
             position: 'bottom',
             labels: {
-              color: '#3563d9ce',
+              color: '#4e4e8a',
             },
           },
           tooltip: {
@@ -201,7 +215,7 @@ const Calendar = () => {
         scales: { 
           x: {
             ticks: {
-              color: '#ecf0f1',
+              color: '#4e4e8a',
               font: {
                 family: 'Quicksand',
               }
@@ -209,7 +223,7 @@ const Calendar = () => {
           },
           y: {
             ticks: {
-              color: '#ecf0f1',
+              color: '#4e4e8a',
               font: {
                 family: 'Quicksand',
               },
@@ -281,7 +295,7 @@ return (
             <div className="white-block">
                 <section className='circle-content'>
                     <Root>
-                        <div style={{transform: 'scale(0.98)', width: '450px', height: '410px'}}>
+                        <div style={{transform: 'scale(0.98)', width: '430px', height: '350px'}}>
                             <Pie data={pieData} options={pieOptions}/>
                         </div>
                     </Root>
@@ -292,22 +306,9 @@ return (
 
             <div className="chart-block">
 
-                <section className="chart-content">
-
-                    <div style={{transform: 'scale(0.98)', width: '770px', height: '370px'}}>
-
-                        <Line data={data} options={LineOptions}/>
-
-                    </div>
-
-                </section>
-
-            </div>
-
-            <div className="bar-block">
                 <section className="bar-chart-content">
 
-                    <div style={{transform: 'scale(0.98)', width: '670px', height: '260px'}}>
+                    <div style={{transform: 'scale(0.98)', width: '770px', height: '590px'}}>
 
                         <Box>
                             <Typography variant="h5" color="#3563d9" fontWeight="bold" family='Quicksand' mb={2}>
@@ -317,17 +318,20 @@ return (
                             <Bar data={barData} options={barOptions}/>
                         </Box>
 
+
                     </div>
+
                 </section>
 
-
             </div>
+
+
 
             <div className="block">
 
                 <section className="chart-content">
 
-                    <div style={{transform: 'scale(0.98)', width: '570px', height: '290px'}}>
+                    <div style={{transform: 'scale(0.98)', width: '450px', height: '220px'}}>
 
                         <Line data={data} options={LineOptions}/>
 
@@ -338,6 +342,15 @@ return (
             </div>
 
 
+        </div>
+
+        <div className="footer">
+            <p>&copy; 2024 Lady Amely. All rights reserved</p>
+            <div className="social-icons">
+                <a href="#facebook" title="Facebook">F</a>
+                <a href="#instagram" title="Instagram">I</a>
+                <a href="#linkedin" title="LinkedIn">L</a>
+            </div>
         </div>
 
 

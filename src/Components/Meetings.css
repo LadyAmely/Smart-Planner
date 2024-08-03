@@ -11,7 +11,7 @@
     padding: 20px;
     margin-left: 250px;
     transition: margin-left 0.3s ease;
-    background-color: #f9f9f9;
+    background-color: #ffffff;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -30,7 +30,7 @@
 }
 
 .meetings-content h2, .meetings-content h3 {
-    color: #4a54f1;
+    color: #6c5b9a;
 }
 
 .meeting-details, .agenda, .attachments, .notes {
@@ -39,17 +39,15 @@
 
 .meeting-details {
     padding: 20px;
-    background-color: #ffffff;
+    background-color: #f0f4f8;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
 }
 
 .meeting-details p {
     margin: 10px 0;
-    color: #333333;
+    color: #4a4a4a;
     line-height: 1.6;
-
 }
 
 .agenda ul, .attachments ul {
@@ -59,31 +57,32 @@
 
 .agenda li, .attachments li {
     margin: 8px 0;
-    color: #333333;
+    color: #4a4a4a;
 }
 
 .agenda li::before {
     content: "• ";
-    color: #007bff;
+    color: #a390e4;
     font-size: 18px;
 }
 
 .attachments a {
-    color: #007bff;
+    color: #a390e4;
     text-decoration: none;
     font-weight: 500;
 }
 
 .attachments a:hover {
     text-decoration: underline;
+    color: #6c5b9a;
 }
 
 .notes p {
     margin: 10px 0;
-    color: #333333;
-    background-color: #f1f5f9;
+    color: #4a4a4a;
+    background-color: #e3e9f0;
     padding: 10px;
-    border-left: 4px solid #007bff;
+    border-left: 4px solid #6c5b9a;
     border-radius: 4px;
 }
 
@@ -94,7 +93,7 @@
 }
 
 .btn-edit, .btn-delete {
-    background-color: #007bff;
+    background-color: #6c5b9a;
     color: white;
     border: none;
     border-radius: 5px;
@@ -105,15 +104,15 @@
 }
 
 .btn-edit:hover, .btn-delete:hover {
-    background-color: #0056b3;
+    background-color: #5b4b77;
     transform: scale(1.05);
 }
 
 .btn-delete {
-    background-color: #dc3545;
+    background-color: #e07a5f;
 }
 
 .btn-delete:hover {
-    background-color: #c82333;
+    background-color: #d96459;
     transform: scale(1.05);
 }

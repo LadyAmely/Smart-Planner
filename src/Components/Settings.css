@@ -34,7 +34,7 @@
 }
 
 .notifications-settings h3 {
-    color: #7ea1f3;
+    color: #89b6e8;
     font-size: 24px;
     margin-bottom: 20px;
     font-family: 'Poppins', sans-serif;
@@ -45,11 +45,11 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px 0;
-    border-bottom: 1px solid #1c71e1;
+    border-bottom: 1px solid #a390e4;
 }
 
 .notifications-settings .notification-option label {
-    color: #a0b7f0;
+    color: #9dbadf;
     font-family: 'Quicksand', sans-serif;
     font-size: 16px;
 }
@@ -65,7 +65,7 @@
 }
 
 .theme-settings h3 {
-    color: #7ea1f3;
+    color: #89b6e8;
     font-size: 24px;
     margin-bottom: 20px;
     font-family: 'Poppins', sans-serif;
@@ -76,11 +76,11 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px 0;
-    border-bottom: 1px solid #1c71e1;
+    border-bottom: 1px solid #a390e4;
 }
 
 .theme-settings .theme-option label {
-    color: #a0b7f0;
+    color: #9dbadf;
     font-family: 'Quicksand', sans-serif;
     font-size: 16px;
 }
@@ -90,7 +90,7 @@
     border: 1px solid #4583d4;
     border-radius: 10px;
     background-color: #14295d24;
-    color: #f6f7f9;
+    color: #2c3e50;
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -100,7 +100,7 @@
 }
 
 .privacy-settings h3 {
-    color: #7ea1f3;
+    color: #89b6e8;
     font-size: 24px;
     margin-bottom: 20px;
     font-family: 'Poppins', sans-serif;
@@ -108,11 +108,11 @@
 
 .privacy-settings .privacy-option {
     padding: 10px 0;
-    border-bottom: 1px solid #1c71e1;
+    border-bottom: 1px solid #a390e4;
 }
 
 .privacy-settings .privacy-option label {
-    color: #a0b7f0;
+    color: #9dbadf;
     font-family: 'Quicksand', sans-serif;
     font-size: 16px;
 }

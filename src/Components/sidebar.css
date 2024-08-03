@@ -44,13 +44,13 @@ body {
 
 .sidebar h2 {
     font-size: 20px;
-    background: linear-gradient(45deg, #408eda, #387de4, #52b3ef, rgb(42, 208, 228));
+    background: linear-gradient(45deg, #a390e4, #89b6e8, #c3a3e6, #9dbadf);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    border-bottom: 2px solid #007bff;
+    border-bottom: 2px solid #8a75d1;
     padding: 15px 20px;
     margin: 0;
     text-align: center;
@@ -61,8 +61,8 @@ body {
 
 
 .sidebar h2:hover {
-    color: #0056b3;
-    border-bottom-color: #0056b3;
+    color: #007bff;
+    border-bottom-color: #007bff;
 }
 
 .sidebar h3 {
@@ -149,7 +149,7 @@ body {
 }
 
 .sidebar-footer .social-icons {
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .sidebar-footer .social-icons a {

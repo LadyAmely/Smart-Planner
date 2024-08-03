@@ -33,14 +33,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .rc-calendar {
     font-family: Quicksand, sans-serif;
-    border: none;
+    border: 1px solid #c3a3e6;
     height: 80%;
     width: 80%;
+    background-color: #f7f9fc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #2c3e50;
+    border-radius: 8px;
+    padding: 20px;
 }
+
 
 .today-text {
     color: rgba(126, 161, 243, 0.682);
