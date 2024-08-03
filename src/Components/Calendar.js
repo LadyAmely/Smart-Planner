@@ -8,6 +8,10 @@ import { styled } from '@mui/system';
 import './ScrollbarStyles.css';
 import './styles.css';
 import dayjs from 'dayjs';
+import './sidebar.css';
+import './header.css';
+import './footer.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
 import { Line, Pie, Bar} from 'react-chartjs-2';
@@ -222,133 +226,106 @@ return (
 
     <div className="calendar">
 
-            <header className="calendar-header">
-                <h1>SMART PLANNER</h1>
-                
-                <div class="search-container">
-                    <input type="text" class="search-input" placeholder="Search Projects.."/>
-                     <button class="search-button">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                         <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                       </svg>
-                     </button>
-                 </div>
+        <div className="header">
+            <a href="#" className="logo">Smart Plan</a>
+            <div className="nav-links">
+                <a href="/help_support">Help & Support</a>
+                <a href="/contact">Contact</a>
+            </div>
+            <div className="actions">
+                <i className="fas fa-bell action-btn" title="Notifications"></i>
+                <i className="fas fa-search action-btn" title="Search"></i>
+                <i className="fas fa-cog action-btn" title="Settings"></i>
+                <i className="fas fa-user action-btn" title="Profile"></i>
+            </div>
+        </div>
 
-                 <div className="today-text">
-                  <h1>Today: {formattedDate}</h1>
-                </div>
-                 
-            </header>
-
-            <nav className="calendar-nav">
+        <div className="sidebar">
+            <h3>Planner Menu</h3>
+            <div className="section">
+                <h2>Tasks & Projects</h2>
                 <ul>
-                    <li><a href="/dashboard" target="_blank" rel="noopener noreferrer">DASHBOARD</a></li>
-                    <li><a href="/calendar" target="_blank" rel="noopener noreferrer">CALENDAR</a></li>
-                    <li><a href="/deadlines" target="_blank" rel="noopener noreferrer">DEADLINES</a></li>
-                    <li><a href="/meetings" target="_blank" rel="noopener noreferrer">MEETINGS</a></li>
-                    <li><a href="/tasks" target="_blank" rel="noopener noreferrer">TASKS</a></li>
-                    <li><a href="/settings" target="_blank" rel="noopener noreferrer">SETTINGS</a></li>
+                    <li><a href="/dashboard"><i className="fas fa-tachometer-alt"></i>Dashboard</a></li>
+                    <li><a href="/calendar"><i className="fas fa-calendar-alt"></i>Calendar</a></li>
+                    <li><a href="/deadlines"><i className="fas fa-calendar-check"></i>Deadlines</a></li>
+                    <li><a href="/meetings"><i className="fas fa-handshake"></i>Meetings</a></li>
+                    <li><a href="/tasks"><i className="fas fa-tasks"></i>Tasks</a></li>
+                    <li><a href="/settings"><i className="fas fa-cogs"></i>Settings</a></li>
                 </ul>
-            </nav>
+            </div>
+            <div className="section">
+                <h2>About the App</h2>
+                <ul>
+                    <li><a href="/about_me"><i className="fas fa-user"></i>About me</a></li>
+                    <li><a href="/terms"><i className="fas fa-file-alt"></i>Terms of Use</a></li>
+                    <li><a href="/privacy_policy"><i className="fas fa-lock"></i>Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div className="sidebar-footer">
+                <p>Powered by Lady Amely</p>
+                <p>Contact Me</p>
+                <p>
+                    <a href="https://www.facebook.com/yourprofile" className="social-icons"><i
+                        className="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/yourprofile" className="social-icons"><i
+                        className="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/yourprofile" className="social-icons"><i
+                        className="fab fa-linkedin-in"></i></a>
+                </p>
+            </div>
+        </div>
 
-            <main className="calendar-main">
-            <h2 class="week-title">Weekly Task Distribution</h2>
-                <section className="calendar-content">
-                
-                <section className="bar-chart-content">
-               
-          <Box>
-            <Typography variant="h5" color="#3563d9" fontWeight="bold" family= 'Quicksand' mb={2}>
-           
-            </Typography>
-          
-            <Bar data={barData} options={barOptions}/>
-          </Box>
-        </section>
-                    <div className="planner">
-                      <h2 class="task-list-title">Task List</h2>
-                        <div className="planner-tasks">
-                            <div className='planner-p'>
-                              <div className="planner-title">
-                                <p>Client Meeting</p>
-                                <div className="tasks-time">
-                                <p>10:00 AM</p>
-                                </div>
-                                <p>Discuss project updates and next steps.</p>
-                              </div>
-                            </div>
-                            <div className='planner-p'>
-                              <div className="planner-title">
-                                <p>Email Review</p>
-                                <div className='tasks-time'>
-                                  <p>11:30 AM</p>
-                                </div>
-                                <p>Reply to all pending client emails.</p>
-                              </div>
-                            </div>
-                            <div className='planner-p'>
-                              <div className="planner-title">
-                                <p>Lunch</p>
-                                <div className='tasks-time'>
-                                <p>1:00 PM</p>
-                                </div>
-                                <p>Try the new café downtown.</p>
-                              </div>
-                            </div>
-                            <div className='planner-p'>
-                              <div className="planner-title">
-                                <p>Team Discussion</p>
-                                <div className="tasks-time">
-                                  <p>2:00 PM</p>
-                                </div>
-                                <p>Brainstorm ideas for the upcoming project.</p>
-                              </div>
-                            </div>
-                            <div className='planner-p'>
-                              <div className="planner-title">
-                                <p>Project Planning</p>
-                                <div className='tasks-time'>
-                                <p>4:00 PM</p>
-                                </div>
-                                <p>Outline milestones and deliverables.</p>
-                              </div>
-                            </div>
-                        </div> 
-                    </div>
-                 
-                    </section>
+
+        <div className="calendar-main">
+
+            <div className="white-block">
+                <section className='circle-content'>
+                    <Root>
+                        <div style={{transform: 'scale(0.98)', width: '450px', height: '410px'}}>
+                            <Pie data={pieData} options={pieOptions}/>
+                        </div>
+                    </Root>
+                </section>
+
+
+            </div>
+
+            <div className="chart-block">
 
                 <section className="chart-content">
 
-                    <h2 class="task-list-title">Progress Tracking of Completed Tasks</h2>
-                   
+                    <div style={{transform: 'scale(0.98)', width: '770px', height: '370px'}}>
 
-                    <Line data={data} options={LineOptions}/>
-                   
-                  
+                        <Line data={data} options={LineOptions}/>
+
+                    </div>
+
                 </section>
 
-                <section className='circle-content'>
-                  <h2 class="task-list-title">Activities and Time Allocation</h2>
-                <Root>
-                <div style={{ transform: 'scale(0.98)', width: '370px', height: '370px' }}> 
-                  <Pie data={pieData} options={pieOptions} />
-                </div>
+            </div>
 
-             
-              
-              </Root>
-                    
+            <div className="bar-block">
+                <section className="bar-chart-content">
+
+                    <div style={{transform: 'scale(0.98)', width: '670px', height: '270px'}}>
+
+                        <Box>
+                            <Typography variant="h5" color="#3563d9" fontWeight="bold" family='Quicksand' mb={2}>
+
+                            </Typography>
+
+                            <Bar data={barData} options={barOptions}/>
+                        </Box>
+
+                    </div>
                 </section>
 
-               
-            </main>
 
-            <footer className="calendar-footer">
-                <p>2024 &copy; All Right Researved by Lady Amely</p>
-            </footer>
+            </div>
 
-          
+
+        </div>
+
 
     </div>
 );
