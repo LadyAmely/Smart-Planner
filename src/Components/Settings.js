@@ -34,7 +34,7 @@ const Settings = () => {
                 <div className="section">
                     <h2>Tasks & Projects</h2>
                     <ul>
-                        <li><a href="/dashboard"><i className="fas fa-tachometer-alt"></i>Dashboard</a></li>
+                        <li><a href="/analysis_report"><i className="fas fa-chart-line"></i>Analysis & Report</a></li>
                         <li><a href="/calendar"><i className="fas fa-calendar-alt"></i>Calendar</a></li>
                         <li><a href="/deadlines"><i className="fas fa-calendar-check"></i>Deadlines</a></li>
                         <li><a href="/meetings"><i className="fas fa-handshake"></i>Meetings</a></li>
