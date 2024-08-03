@@ -227,7 +227,7 @@ return (
     <div className="calendar">
 
         <div className="header">
-            <a href="#" className="logo">Smart Plan</a>
+            <a href="#" className="logo">Smart Planner</a>
             <div className="nav-links">
                 <a href="/help_support">Help & Support</a>
                 <a href="/contact">Contact</a>
@@ -307,7 +307,7 @@ return (
             <div className="bar-block">
                 <section className="bar-chart-content">
 
-                    <div style={{transform: 'scale(0.98)', width: '670px', height: '270px'}}>
+                    <div style={{transform: 'scale(0.98)', width: '670px', height: '260px'}}>
 
                         <Box>
                             <Typography variant="h5" color="#3563d9" fontWeight="bold" family='Quicksand' mb={2}>
@@ -320,6 +320,20 @@ return (
                     </div>
                 </section>
 
+
+            </div>
+
+            <div className="block">
+
+                <section className="chart-content">
+
+                    <div style={{transform: 'scale(0.98)', width: '570px', height: '290px'}}>
+
+                        <Line data={data} options={LineOptions}/>
+
+                    </div>
+
+                </section>
 
             </div>
 

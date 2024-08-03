@@ -16,7 +16,7 @@ const Tasks = () => {
         <div className="tasks">
 
             <div className="header">
-                <a href="#" className="logo">Smart Plan</a>
+                <a href="#" className="logo">Smart Planner</a>
                 <div className="nav-links">
                     <a href="/help_support">Help & Support</a>
                     <a href="/contact">Contact</a>
